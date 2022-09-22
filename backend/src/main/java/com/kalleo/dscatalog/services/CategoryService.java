@@ -1,6 +1,7 @@
 package com.kalleo.dscatalog.services;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.kalleo.dscatalog.dto.CategoryDTO;
 import com.kalleo.dscatalog.entities.Category;
 import com.kalleo.dscatalog.repositories.CategoryRepository;
+import com.kalleo.dscatalog.services.exceptions.EntityNotFoundException;
 
 /**
  * @author Kalleo
@@ -33,6 +35,13 @@ public class CategoryService {
 		}
 		*/	
 		return list.stream().map(x -> new CategoryDTO(x)).collect(Collectors.toList());
+	}
+	
+	@Transactional(readOnly = true)
+	public CategoryDTO findById(Long id) {
+		Optional<Category> obj = repository.findById(id);
+		Category entity = obj.orElseThrow(()-> new EntityNotFoundException("Entity not found"));
+		return new CategoryDTO(entity);
 	}
 
 }
