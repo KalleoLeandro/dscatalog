@@ -54,3 +54,14 @@ INSERT INTO tb_product_category (product_id, category_id) VALUES (22, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (23, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (24, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (25, 3);
+
+insert into tb_client(name, cpf, income,birth_Date, children) values('George Paul', '662.985.440-38', 1524.00,TIMESTAMP WITH TIME ZONE '1965-05-10T00:00:00Z',2);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Heather Castro', '657.449.150-95', 3456.00,TIMESTAMP WITH TIME ZONE '1984-02-04T00:00:00Z',1);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Adam Dixon', '767.209.910-86', 3264.00,TIMESTAMP WITH TIME ZONE '1994-04-01T00:00:00Z',0);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Anthony Ortiz', '482.215.200-63', 2131.00,TIMESTAMP WITH TIME ZONE '1988-10-28T00:00:00Z',4);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Tony Rodriguez', '147.939.920-56', 3070.00,TIMESTAMP WITH TIME ZONE '1972-08-14T00:00:00Z',3);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Wendy Hicks', '257.467.740-49', 2844.00,TIMESTAMP WITH TIME ZONE '1989-09-07T00:00:00Z',4);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Kimberly Gonzalez', '208.041.870-02', 2114.00,TIMESTAMP WITH TIME ZONE '1984-07-19T00:00:00Z',2);
+insert into tb_client(name, cpf, income,birth_Date, children) values('George Hernandez', '098.234.230-67', 2391.00,TIMESTAMP WITH TIME ZONE '1989-01-29T00:00:00Z',1);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Nancy Scott', '567.762.910-39', 3487.00,TIMESTAMP WITH TIME ZONE '2001-09-11T00:00:00Z',0);
+insert into tb_client(name, cpf, income,birth_Date, children) values('Brett Lopez', '373.640.310-06', 1669.00,TIMESTAMP WITH TIME ZONE '1960-06-01T00:00:00Z',5);
