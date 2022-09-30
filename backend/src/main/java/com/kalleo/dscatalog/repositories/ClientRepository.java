@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.kalleo.dscatalog.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;

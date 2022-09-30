@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.kalleo.dscatalog.services.exceptions;
 
 /**

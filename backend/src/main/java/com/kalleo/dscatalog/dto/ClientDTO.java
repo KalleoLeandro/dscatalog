@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.kalleo.dscatalog.dto;
 
 import java.io.Serializable;

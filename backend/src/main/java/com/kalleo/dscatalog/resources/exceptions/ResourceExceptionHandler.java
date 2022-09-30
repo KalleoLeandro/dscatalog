@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.kalleo.dscatalog.resources.exceptions;
 
 import java.time.Instant;
