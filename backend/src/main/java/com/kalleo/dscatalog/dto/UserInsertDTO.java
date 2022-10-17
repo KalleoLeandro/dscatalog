@@ -5,11 +5,14 @@ package com.kalleo.dscatalog.dto;
 
 import java.io.Serializable;
 
+import com.kalleo.dscatalog.services.validation.UserInsertValid;
+
 /**
  * @author Kalleo
  *
  */
 
+@UserInsertValid
 public class UserInsertDTO extends UserDTO implements Serializable{
 
 	/**
