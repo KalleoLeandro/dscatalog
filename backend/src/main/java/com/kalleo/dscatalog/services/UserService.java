@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.kalleo.dscatalog.dto.RoleDTO;
 import com.kalleo.dscatalog.dto.UserDTO;
 import com.kalleo.dscatalog.dto.UserInsertDTO;
+import com.kalleo.dscatalog.dto.UserUpdateDTO;
 import com.kalleo.dscatalog.entities.Role;
 import com.kalleo.dscatalog.entities.User;
 import com.kalleo.dscatalog.repositories.RoleRepository;
@@ -64,7 +65,7 @@ public class UserService {
 	}
 
 	@Transactional
-	public UserDTO update(Long id, UserDTO dto) {		
+	public UserDTO update(Long id, UserUpdateDTO dto) {		
 		try{
 			User entity = userRepository.getOne(id);
 			//entity.setName(dto.getName());
